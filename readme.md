@@ -1,6 +1,6 @@
-# Frontend Template
+# Gulp Frontend Template
 
-Startup front-end template for building fast, robust, and adaptable web apps or sites. Included Bourbon.
+Building fast, robust, and adaptable web apps or sites.
 
 * Version: 4.0
 * Author: edytor49@gmail.com
@@ -59,7 +59,7 @@ Startup front-end template for building fast, robust, and adaptable web apps or 
 
 Скрипт должен отработать как можно раньше и добавит `<html class='webp'>`, в дальнейшем с стилях необходимо все фоновые изображения прописывать через миксин `@include bg-url('image/background.jpg', $webp1x: 'image/background.webp');` из файла `stylesheet/_utils/_mixins.scss`. Подробнее почитать о данном fallback для webp можно в статье в Reference Links
 
-## License
+### License
 
 The code is available under the MIT license
 
