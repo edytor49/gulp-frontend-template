@@ -23,16 +23,16 @@ Startup front-end template for building fast, robust, and adaptable web apps or 
 
 ### Contributing
 
-* NPM - `https://www.npmjs.com/`
-* Gulp - `https://gulpjs.com/`
-* SASS (SCSS) - `https://sass-scss.ru/`
-* Twig - `https://twig.symfony.com/`
-* Bourbon -- `https://www.bourbon.io/`
+* NPM - (https://www.npmjs.com/)
+* Gulp - (https://gulpjs.com/)
+* SASS (SCSS) - (https://sass-scss.ru/)
+* Twig - (https://twig.symfony.com/)
+* Bourbon -- (https://www.bourbon.io/)
 
 ### Features
 
 * BEM Methodology (class naming)
-* SMACSS (project styles architecture) `http://sass-guidelin.es/`
+* SMACSS (project styles architecture) (http://sass-guidelin.es/)
 * CSS Framework: Bootstrap / Tailwind CSS / Bulma / UIKit
 
 ### Advance
