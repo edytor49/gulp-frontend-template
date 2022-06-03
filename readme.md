@@ -3,7 +3,7 @@
 Startup front-end template for building fast, robust, and adaptable web apps or sites. Included Bourbon.
 
 * Version: 4.0
-* Author: ed49 (edytor49@gmail.com)
+* Author: edytor49@gmail.com
 
 ### Quick start
 
@@ -23,16 +23,16 @@ Startup front-end template for building fast, robust, and adaptable web apps or 
 
 ### Contributing
 
-* NPM - (https://www.npmjs.com/)
-* Gulp - (https://gulpjs.com/)
-* SASS (SCSS) - (https://sass-scss.ru/)
-* Twig - (https://twig.symfony.com/)
-* Bourbon -- (https://www.bourbon.io/)
+* NPM - https://www.npmjs.com/
+* Gulp - https://gulpjs.com/
+* SASS (SCSS) - https://sass-scss.ru/
+* Twig - https://twig.symfony.com/
+* Bourbon - https://www.bourbon.io/
 
 ### Features
 
 * BEM Methodology (class naming)
-* SMACSS (project styles architecture) (http://sass-guidelin.es/)
+* SMACSS (project styles architecture) http://sass-guidelin.es/
 * CSS Framework: Bootstrap / Tailwind CSS / Bulma / UIKit
 
 ### Advance
@@ -65,10 +65,10 @@ The code is available under the MIT license
 
 ### Reference Links
 
-* [HTML template, Apache & Nginx configs] (https://github.com/h5bp/html5-boilerplate)
-* [Lightweight startup HTML5 template, based on Gulp] (https://github.com/agragregra/OptimizedHTML-5)
-* [Пошаговая инструкция по настройке сборки Gulp 4 для верстки сайтов] (https://www.youtube.com/watch?v=stFOy0Noahg&t=4056s)
-* [Свежий взгляд на Gulp: функции и ES-модули] (https://www.youtube.com/watch?v=fgJmCevEtL4)
-* [Стартовый шаблон автора канала FrontCoder] (https://github.com/FARCER/Start-template-gulp-4-pug-sass/)
-* [Шаблон gulpfile с деплоем для Opencart] (https://gist.github.com/ZeRRoCull/6cfd9063b9e1db61703dc98549db0509)
-* [WebP image and background usage in web projects] (https://raoulkramer.de/webp-image-and-background-usage-in-web-projects/)
+* [HTML template, Apache & Nginx configs] https://github.com/h5bp/html5-boilerplate
+* [Lightweight startup HTML5 template, based on Gulp] https://github.com/agragregra/OptimizedHTML-5
+* [Пошаговая инструкция по настройке сборки Gulp 4 для верстки сайтов] https://www.youtube.com/watch?v=stFOy0Noahg&t=4056s
+* [Свежий взгляд на Gulp: функции и ES-модули] https://www.youtube.com/watch?v=fgJmCevEtL4
+* [Стартовый шаблон автора канала FrontCoder] https://github.com/FARCER/Start-template-gulp-4-pug-sass/
+* [Шаблон gulpfile с деплоем для Opencart] https://gist.github.com/ZeRRoCull/6cfd9063b9e1db61703dc98549db0509
+* [WebP image and background usage in web projects] https://raoulkramer.de/webp-image-and-background-usage-in-web-projects/
