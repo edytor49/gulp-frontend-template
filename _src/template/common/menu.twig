@@ -1,0 +1,69 @@
+{% if categories %}
+  <nav class="megamenu" id="menu">
+    <div class="container">
+      <ul class="megamenu-nav js-navbar">
+        {% for category in categories %}
+        {% if category.children %}
+        <li class="nav-item has-children">
+          <a href="{{ category.href }}" class="nav-link children-toggler">{{ category.name }}</a>
+
+          {% if category.class == 'megamenu-secondary-nav' %}
+
+            <ul class="megamenu-secondary-nav is-hidden">
+              <li class="go-back"><a href="#0" class="nav-link">{{ category.name }}</a></li>
+              <li class="see-all"><a href="{{ category.href }}" class="nav-link">Перейти в «{{ category.name }}»</a></li>
+
+              {% for child in category.children %}
+              {% if child.children %}
+              <li class="nav-item has-children col-md-6 col-lg-3">
+                <a href="{{ child.href }}" class="nav-link children-toggler">{{ child.name }}</a>
+
+                <ul class="is-hidden">
+                  <li class="go-back"><a href="#0" class="nav-link">{{ child.name }}</a></li>
+                  <li class="see-all"><a href="{{ child.href }}" class="nav-link">Все {{ child.name }}</a></li>
+
+                  {% for child_2 in child.children %}
+                  <li><a href="#">{{ child_2 }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+              {% else %}
+              <li class="nav-item"><a href="{{ child.href }}" class="nav-link">{{ child.name }}</a></li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+
+          {% elseif (category.class == 'megamenu-icon-list' ) %}
+
+          <ul class="{{ category.class }} is-hidden">
+            <li class="go-back"><a href="#0" class="nav-link">{{ category.name }}</a></li>
+            <li class="see-all"><a href="#" class="nav-link">Перейти в «{{ category.name }}»</a></li>
+
+            {% for child in category.children %}
+            <li class="nav-item col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="nav-link d-flex align-items-center">
+                {% if child.image %}
+                <img data-src="{{ child.image }}" alt="{{ child.name }}" class="lazyload">
+                <div class="pl-3">
+                  {{ child.name }}<br />
+                  <small class="text-muted">В каталоге {{ random(500, 100000) }} товаров</small>
+                </div>
+                {% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+          {% endif %}
+
+
+
+        </li>
+        {% else %}
+        <li class="nav-item"><a href="{{ category.href }}" class="nav-link">{{ category.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+{% endif %}

@@ -1,0 +1,7 @@
+{# //- use(xlink:href="stylesheet/svg/sprite/symbol/sprite.svg#" + name) #}
+{# Example How to use: {{ svg.icon('iconname') }} #}
+{% macro icon(name = "", mode = "") %}
+<svg class="svgsprite svgsprite--{{ name }} {{ mode }}">
+  <use xlink:href="stylesheet/svg/sprite/symbol/sprite.svg#{{ name }}"></use>
+</svg>
+{% endmacro %}

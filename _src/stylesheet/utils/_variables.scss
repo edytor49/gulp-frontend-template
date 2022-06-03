@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// # Colors
+$gray-200: #ededed;
+$gray-600: #bfcacc;
+$grey-800: #1e1b21;
+$purple: #7231c0;
+$green: #2aca79;
+$yellow: #ffedc5;
+$pink: #edacc8;
+$cyan: #00d3d7;
+
+$primary-color: $purple;
+$success-color: $green;
+$warning-color: $yellow;
+$danger-color: $pink;
+$info-color: $cyan;
+
+$base-text-color: $grey-800;
+$primary-text-color: $primary-color;
+$success-text-color: $success-color;
+$warning-text-color: $warning-color;
+$danger-text-color: $danger-color;
+$info-text-color: $info-color;
+$muted-text-color: $gray-600;
+
+// Typography
+
+$rem-font-size: 0; // 0 - null by default, thus nothing is generated, base 1rem = 16px
+
+$font-stack-base: 'Gilroy', $font-stack-system;
+// $font-stack-secondary: $font-stack-system;
+$font-family-sans-serif: $font-stack-base;
+$font-family-base: $font-stack-base;
+$font-size-base: 0.875rem; // 14px
+$font-weight-base: 400;
+$font-height-base: 1.3;
+
+// $font-family-secondary: $font-stack-secondary;
+
+$h1-font-size:                $font-size-base * 1.875;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1.15;
+$h5-font-size:                $font-size-base * 1;
+
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.2 !default;
+
+$small-font-size: 85% !default;
+
+// Link
+$link-color:                              $base-text-color !default;
+$link-decoration:                         underline !default;
+$link-hover-decoration:                   none !default;
+
+// Transition
+$base-duration: 200ms;
+$base-timing: ease-in-out;
+$base-animation: $base-duration $base-timing;
+
+// Focus
+$focus-outline-color: transparentize($primary-color, 0.0);
+$focus-outline-width: 0;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 0;
+
+// btn
+$btn-font-weight: 700;
+$btn-border-width: 2px;
+$btn-border-radius: 2.75rem;
+$btn-padding-y: 1.5rem;
+$btn-padding-x: 3rem;

@@ -1,0 +1,53 @@
+/*
+ *  ----------------------------------------------
+ *  author: edytor49@gmail.com
+ *  date: --/--/----
+ *  ------------------------------------------------
+**/
+
+// bourbon -- https://www.bourbon.io/docs/latest
+@import "bourbon";
+
+// utils -- только сущности используемые для разработки, но которые в итоговом файл стилей не попадут,
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/placeholder";
+@import "utils/mixins";
+
+// node_modules (or vendor)
+// @import "../../node_modules/bootstrap/scss/bootstrap-reboot"; // Bootstrap
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid"; // Bootstrap
+// @import "../../node_modules/font-awesome/scss/font-awesome"; // Font Awesome
+// @import "../../node_modules/swiper/dist/css/swiper"; // Swiper
+// @import "../../node_modules/bootstrap-select/sass/bootstrap-select"; // Bootstrap Select
+
+// base
+@import "base/fonts";
+// @import "base/reset"; // if u don't use Bootstrap Reboot
+@import "base/typography";
+@import "base/base"; // base and helpers styles
+@import "base/svgfont";
+@import "base/svgsprite"; // file for declarate sprite class using "utils/sprite" (example: custom svg icons)
+@import "base/animation";
+
+// component
+// @import "component/module";
+// @import "component/breadcrumb";
+
+// layout
+@import "layout/layout";
+@import "layout/menu";
+@import "layout/header";
+@import "layout/footer";
+
+// module
+// @import "module/*";
+
+// pages
+// @import "pages/*";
+
+
+
+// vendor-extension
+// @import "vendor/custom-bootstrap"
+// @import "vendor/custom-bootstrap-select"

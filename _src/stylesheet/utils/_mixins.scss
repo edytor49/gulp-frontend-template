@@ -1,0 +1,77 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin bg-url($url, $url2x: false, $webp1x: false, $webp2x: false) {
+  background-image: url($url);
+
+  @if $webp1x {
+    .webp & {
+      background-image: url($webp1x);
+    }
+  }
+
+  @if $url2x {
+    @media
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url($url2x);
+      @if $webp2x {
+        .webp & {
+          background-image: url($webp2x);
+        }
+      }
+    }
+  }
+}
+
+// * Media Queries
+
+// min
+@mixin sm() {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin md() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin lg() {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin xl() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xxl() {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

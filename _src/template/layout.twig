@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="mask-icon" href="image/favicon/favicon.svg" color="#532A87"/>
+    <link rel="icon" type="image/svg+xml" href="image/favicon/favicon.svg"/>
+    <link rel="icon" href="image/favicon/favicon-48x48.png" sizes="48x48"/>
+    <link rel="icon" href="image/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" href="image/favicon/favicon-192x192.png" sizes="192x192"/>
+    <title>{{ title | default("Frontend Template") }}</title>
+
+    {# NOTE: include fonts here #}
+    {# <link rel="preload" href="stylesheet/font/Gilroy/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="stylesheet/font/Gilroy/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="stylesheet/font/Gilroy/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="stylesheet/font/Gilroy/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin/> #}
+
+    {# NOTE: uncomment if u use SVG Sprite and want to preload it #}
+    {# <link rel="preload" href="stylesheet/svg/symbol/sprite.svg" as="image" type="font/svg" crossorigin/> #}
+
+    <link href="stylesheet/stylesheet.min.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body class="layout layout--{{ bodyClass }}">
+    <!--[if lt IE 11]>
+    <p class="chromeframe">Похоже, что Вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер бесплатно с официального сайта</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
+    <![endif]-->
+
+    {% include 'common/header.twig' %}
+
+    {% include "common/menu.twig" %}
+
+    <div class="layout__content">
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include 'common/footer.twig' %}
+
+    {# NOTE: include css libs for all pages here #}
+    {% block styles %}{% endblock %}
+
+    {# NOTE: include js libs for all pages here #}
+    {# <script src="javascript/ls.bgset.min.js" type="text/javascript" defer></script> #}
+    {# <script src="javascript/lazysizes.min.js" type="text/javascript" defer></script> #}
+    <script src="javascript/main.min.js" type="text/javascript" defer></script>
+
+    {# NOTE: write custom inline js for all pages here #}
+    {# <script type="text/javascript"></script> #}
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

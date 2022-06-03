@@ -1,0 +1,12 @@
+.module {
+  padding: 1.5rem 3rem; // 24px 48px
+
+  &__heading {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &__body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

@@ -1,0 +1,9 @@
+<ul class="breadcrumb d-none d-md-flex">
+  {% for i, breadcrumb in breadcrumbs %}
+  {% if (i + 1 < breadcrumbs|length) %}
+  <li class="breadcrumb-item"><a href="{{ breadcrumb['href'] }}">{{ breadcrumb['text'] }}</a></li>
+  {% else %}
+  <li class="breadcrumb-item active" aria-current="page"><span>{{ breadcrumb['text'] }}</span></li>
+  {% endif %}
+  {% endfor %}
+</ul>

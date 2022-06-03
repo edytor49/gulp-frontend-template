@@ -7,7 +7,7 @@ Startup front-end template for building fast, robust, and adaptable web apps or 
 
 ## Quick start
 
-1. Clone the git repo — `git clone https://edytor49@bitbucket.org/edytor49/frontend-template.git` or Download
+1. Clone the git repo — `git clone https://github.com/edytor49/gulp-frontend-template.git` or Download
 2. install all dev packages - `npm install` or `npm i`
 3. run gulp - `gulp`
 
@@ -64,7 +64,8 @@ The code is available under the MIT license
 
 ### WebP in styles (for old browser)
 
-Если необходимо выполнять проверку поддержки браузером формата WebP для использования его в стилях. Вставить в подвал сайта скрипт: 
+Если необходимо выполнять проверку поддержки браузером формата WebP для использования его в стилях. Вставить в подвал сайта скрипт:
+
 `!function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s)}(document);`
 
 Скрипт должен отработать как можно раньше и добавит `<html class='webp'>`, в дальнейшем с стилях необходимо все фоновые изображения прописывать через миксин `@include bg-url('image/background.jpg', $webp1x: 'image/background.webp');` из файла `stylesheet/_utils/_mixins.scss`. Подробнее почитать о данном fallback для webp можно в статье в Reference Links

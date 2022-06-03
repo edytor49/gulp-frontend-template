@@ -1,0 +1,44 @@
+// NOTE: if u use bootstrap reboot comment this and use rewrited Bootstrap Vars for Typography. In this file just rewrite styles of typography/
+// html {
+//   // font-size: $rem-font-size; // set size of 1rem unit
+// }
+
+// body {
+//   color: $base-text-color;
+//   font-family: $base-font-family;
+//   font-size: $base-font-size;
+//   line-height: $base-line-height;
+//   font-weight: $base-font-weight;
+// }
+// NOTE: END if u use bootstrap reboot comment this
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+}
+h1, .h1 {
+
+}
+h2, .h2 {
+
+}
+h3, .h3 {
+
+}
+h4, .h4 {
+
+}
+
+// a {
+//   color: $primary-text-color;
+//   text-decoration-skip: ink;
+//   transition: all $base-animation;
+
+//   &:hover {
+//     color: shade($primary-text-color, 8%);
+//   }
+
+//   &:focus {
+//     outline: $focus-outline;
+//     outline-offset: $focus-outline-offset;
+//   }
+// }

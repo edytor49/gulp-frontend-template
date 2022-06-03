@@ -1,0 +1,16 @@
+<ul class="pagination justify-content-center justify-content-xl-end">
+
+  <li class="page-item"><a href="#" class="page-link">{{ text_first }}</a></li>
+  <li class="page-item"><a href="#" class="page-link">{{ text_prev }}</a></li>
+
+  {% for i in range(8, 14) %}
+  {% if (i == 11) %}
+  <li class="page-item active"><span class="page-link">{{ i }}</span></li>
+  {% else %}
+  <li class="page-item"><a href="#" class="page-link">{{ i }}</a></li>
+  {% endif %}
+  {% endfor %}
+
+  <li class="page-item"><a href="#" class="page-link">{{ text_next }}</a></li>
+  <li class="page-item"><a href="#" class="page-link">{{ text_last }}</a></li>
+</ul>
