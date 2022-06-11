@@ -1,7 +1,7 @@
-{#  Example to use: webp.image('image/background.jpg') #}
-{% macro image(path="") %}
+{#  Example to use: webp.image('image/background.jpg', 'img-fluid') #}
+{% macro image(path="", class="") %}
 <picture>
   <source srcset="{{ path|replace({'jpg' : 'webp', 'jpeg' : 'webp', 'png' : 'webp', 'gif' : 'webp'}) }}" type="image/webp">
-  <img src="{{ path }}" alt="">
+  <img src="{{ path }}" alt="#" {{ (class) ? 'class="' ~ class ~ '"' : '' }}>
 </picture>
 {% endmacro %}
