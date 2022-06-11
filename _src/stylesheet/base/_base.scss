@@ -1,25 +1,32 @@
-html {
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-figure {
-  margin: 0;
-}
-
 img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.layout {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__header {
+
+  }
+  &__content {
+    flex: 1 1 auto;
+    position: relative;
+  }
+  &__sidebar {
+
+  }
+  &__main {
+
+  }
+
+  // Mods
+  &--home {
+
+  }
 }

@@ -5,48 +5,47 @@
  *  ------------------------------------------------
 **/
 
-// bourbon -- https://www.bourbon.io/docs/latest
+@charset "UTF-8";
+
 @import "bourbon";
 
 // utils -- только сущности используемые для разработки, но которые в итоговом файл стилей не попадут,
-@import "utils/variables";
+// @import "../../node_modules/bootstrap/scss/functions"; // bootstrap-reboot
+// @import "../../node_modules/bootstrap/scss/variables"; // bootstrap-reboot
+// @import "../../node_modules/bootstrap/scss/mixins"; // bootstrap-reboot
 @import "utils/functions";
-@import "utils/placeholder";
+@import "utils/variables";
 @import "utils/mixins";
-
-// node_modules (or vendor)
-// @import "../../node_modules/bootstrap/scss/bootstrap-reboot"; // Bootstrap
-// @import "../../node_modules/bootstrap/scss/bootstrap-grid"; // Bootstrap
-// @import "../../node_modules/font-awesome/scss/font-awesome"; // Font Awesome
-// @import "../../node_modules/swiper/dist/css/swiper"; // Swiper
-// @import "../../node_modules/bootstrap-select/sass/bootstrap-select"; // Bootstrap Select
+@import "utils/placeholder";
 
 // base
 @import "base/fonts";
-// @import "base/reset"; // if u don't use Bootstrap Reboot
+// @import "../../node_modules/bootstrap/scss/root"; // bootstrap-reboot
+// @import "../../node_modules/bootstrap/scss/reboot"; // bootstrap-reboot
+// @import "../../node_modules/bootstrap/scss/type"; // bootstrap
+@import "base/animation";
 @import "base/typography";
 @import "base/base"; // base and helpers styles
-@import "base/svgfont";
-@import "base/svgsprite"; // file for declarate sprite class using "utils/sprite" (example: custom svg icons)
-@import "base/animation";
+// @import "base/svgfont";
+// @import "base/svgsprite"; // file for declarate sprite class using "utils/sprite" (example: custom svg icons)
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid"; // Bootstrap
 
 // component
 // @import "component/module";
 // @import "component/breadcrumb";
 
-// layout
-@import "layout/layout";
-@import "layout/menu";
-@import "layout/header";
-@import "layout/footer";
-
 // module
-// @import "module/*";
+@import "module/header";
+@import "module/menu";
+@import "module/footer";
 
 // pages
 // @import "pages/*";
 
-
+// node_modules (or vendor)
+// @import "../../node_modules/font-awesome/scss/font-awesome"; // Font Awesome
+// @import "../../node_modules/swiper/dist/css/swiper"; // Swiper
+// @import "../../node_modules/bootstrap-select/sass/bootstrap-select"; // Bootstrap Select
 
 // vendor-extension
 // @import "vendor/custom-bootstrap"

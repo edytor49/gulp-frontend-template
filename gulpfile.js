@@ -31,7 +31,7 @@ const config = {
     data:       source + "/data/**/*.twig.json",
     twig:       source + "/template/**/*.twig",
     scss:       source + "/stylesheet/**/*.scss",
-    js:         source + "/javascript/**/*.js",
+    js:         [source + "/javascript/*.js", "!" + source + "/js/*.min.js"],
     image:      source + "/image/content/**/*.{png,jpg,gif,ico,webp,svg}",
     css_image:  dest   + "/image/css/**/*.{png,jpg,gif,ico,webp,svg}",
     svgsprite:  source + "/image/svg/sprite/**/*.svg",
@@ -59,7 +59,7 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const fs = require('fs-extra');
 const path = require('path');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
@@ -85,6 +85,7 @@ const merge =   require('merge-stream');
 const server = () => {
   browserSync.init({
     server: { baseDir: dest },
+    ghostMode: { clicks: false },
     notify: false,
     // online: true,
 		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
@@ -116,7 +117,7 @@ const compileSCSS = () => {
   return gulp.src(config.src.scss)
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     // .pipe(sourcemaps.init())
-    .pipe(sass({
+    .pipe(sass.sync({
       outputStyle: 'expanded',
       // sourcemaps: true,
       includePaths: bourbon.includePaths

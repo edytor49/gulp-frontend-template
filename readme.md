@@ -7,10 +7,9 @@ Building fast, robust, and adaptable web apps or sites.
 
 ### Quick start
 
-1. clone the git repo — `git clone https://github.com/edytor49/gulp-frontend-template.git` or Download
-2. copy content to project root
-3. install all dev packages - `npm install` or `npm i` in console
-4. run gulp - `gulp` in console
+1. clone the git repo — `git clone https://github.com/edytor49/gulp-frontend-template.git; rm -rf trunk readme.md .git app`
+2. install all dev packages - `npm install` or `npm i` in console
+3. run gulp - `gulp` in console
 
 ### Browser support
 
